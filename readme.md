@@ -2,7 +2,7 @@
 
 ## shell script syntax in bash
 
-![syntax](https://devhints.io/bash)
+[syntax](https://devhints.io/bash)
 
 ## auto pull and push script
 
