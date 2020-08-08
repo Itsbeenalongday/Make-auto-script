@@ -15,3 +15,15 @@
 $ sh git.sh
 
 ```
+
+## auto five lang(c, c++, java, python, node.js) compile in terminal
+
+> compile.sh
+
++ how to run?
+
+```bash
+
+$ sh compile.sh
+
+```
