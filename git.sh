@@ -11,7 +11,7 @@ echo "#                                          #"
 echo "#                                          #"
 echo "############################################"
 echo -e "\n"
-echo "*** start pull ***";
+echo "*** start pull ***"
 echo -e "\n"
 git pull
 echo -e "\n"
