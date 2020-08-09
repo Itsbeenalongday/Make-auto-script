@@ -20,7 +20,7 @@ read line
 echo -e "\n"
 git add .
 echo -e "\n"
-git commit -am "$line"
+git commit -m "$line"
 echo -e "\n"
 git push
 echo -e "\n"
