@@ -27,3 +27,15 @@ $ sh git.sh
 $ sh compile.sh
 
 ```
+
+## auto synchronization forked repository
+
+> refresh.sh
+
++ how to run?
+
+```bash
+
+$ sh refresh.sh
+
+```
