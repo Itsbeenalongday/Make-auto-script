@@ -33,7 +33,7 @@ if (($option == 1)); then
     echo "*** start program ***"
     echo -e "\n"
     gcc -W -Wall "$file" && ./a.exe
-    execute=${file:0:4} # 변수쓸 때 띄어쓰기를 하면 안됨
+    execute=${file:-1:2} # 변수쓸 때 띄어쓰기를 하면 안됨 remove .c
     mv a.exe "$execute"
     echo -e "\n"
 elif (($option == 2)); then
@@ -45,7 +45,7 @@ elif (($option == 2)); then
     echo "*** start program ***"
     echo -e "\n"
     g++ -W -Wall "$file" && ./a.exe
-    execute=${file:0:4}
+    execute=${file:-1:4} # remove .cpp
     mv a.exe "$execute"
     echo -e "\n"
 elif (($option == 3)); then
