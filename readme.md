@@ -1,4 +1,4 @@
-# Make awesome automatical shell script
+# Make awesome automatical script
 
 ## shell script syntax in bash
 
@@ -38,4 +38,13 @@ $ sh compile.sh
 
 $ sh refresh.sh
 
+```
+## auto all subdir which tracked by git backup(pull add commit push) script
+
+> backup_to_git.py
+
++ how to run?
+
+```bash
+$ python backup_to_git.py
 ```
