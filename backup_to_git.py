@@ -1,3 +1,10 @@
+#########################################################################################################
+#                                                                                                       #
+#       This program allows you to automatically back up all subdirectories tracked by git              #
+#                                                                                                       #
+#                                    written by sungminyou                                              #
+#                                                                                                       #
+#########################################################################################################
 import os
 import subprocess
 count = 0
@@ -8,7 +15,7 @@ def traverse_subdir(root_dir):
     for file in files:
         if os.path.isdir(file):
             if os.path.isdir(file+'\\'+'.git'):
-                print('start backup ' + file + ' repository')
+                print('\nstart backup ' + file + ' repository')
                 print()
                 count += 1
                 print('진행도 : ' + str(count) + '/' + str(total))
@@ -24,5 +31,13 @@ def traverse_subdir(root_dir):
                 print()
                 print(file +' repository successfully backup')
                 os.chdir(root_dir)
+            else:
+                total -= 1
+        else:
+            total -= 1
 root_dir = "D:\git"
 traverse_subdir(root_dir)
+
+# 개선사항 
+# 루트디렉토리 입력가능하게 만들 것
+# branch이름이 origin master가 아닌 경우 checkout을 이용하여 바꾸고 백업이 되게할 것
