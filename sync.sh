@@ -14,14 +14,16 @@ echo "*** check remote repository ***"
 echo -e "\n"
 git remote -v
 echo -e "\n"
-echo -e "add remote repository?\n"
-echo -en "[y/n] >>> "
-read option
-while (( $option != "y" || $option != "n" )); do
-    echo -en "[y/n] >>> "
-    read option
+while true; do
+    read -p "add remote repository? [y/n] >> " option
+    if [ $option == "y" ] || [ $option == "n" ]; then
+        break
+    else
+        echo "Invaild input please enter y or n"
+        continue
+    fi 
 done
-if (($option == "y")); then
+if [ $option == "y" ]; then
     git remote remove upstream
     echo -en "please type remote repository url >>> "
     read url
@@ -45,7 +47,7 @@ if (($option == "y")); then
     echo -e "\n"
     echo "*** pushing successfully done ***"
     echo -e "\n"
-elif (($option == "n")); then
+elif [ $option == "n" ]; then
     echo "*** fetch remote repository ***"
     echo -e "\n"
     git fetch upstream

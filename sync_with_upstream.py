@@ -1,6 +1,6 @@
 #########################################################################################################
 #                                                                                                       #
-#       This program allows you to automatically back up all subdirectories tracked by git              #
+#       This program allows you to automatically synchronize all forked submodules with upstream        #
 #                                                                                                       #
 #                                    written by sungminyou                                              #
 #                                                                                                       #
@@ -24,7 +24,7 @@ def traverse_subdir(root_dir):
             path = root_dir + '\\'
             path += file
             os.chdir(path)
-            os.system('sh ../refresh.sh')
+            os.system('sh ../sync.sh')
             print()
             print(file +' repository successfully refresh')
             os.chdir(root_dir)
@@ -32,7 +32,3 @@ def traverse_subdir(root_dir):
             total -= 1
 root_dir = "D:\git\Reference"
 traverse_subdir(root_dir)
-
-# 개선사항 
-# 루트디렉토리 입력가능하게 만들 것
-# branch이름이 origin master가 아닌 경우 checkout을 이용하여 바꾸고 백업이 되게할 것
