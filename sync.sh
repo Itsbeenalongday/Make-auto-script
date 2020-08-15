@@ -16,7 +16,7 @@ git remote -v
 echo -e "\n"
 while true; do
     read -p "add remote repository? [y/n] >> " option
-    if [ $option == "y" ] || [ $option == "n" ]; then
+    if [ "$option" == "y" ] || [ "$option" == "n" ]; then
         break
     else
         echo "Invaild input please enter y or n"
