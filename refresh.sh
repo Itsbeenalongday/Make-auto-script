@@ -22,6 +22,7 @@ while (( $option != "y" || $option != "n" )); do
     read option
 done
 if (($option == "y")); then
+    git remote remove upstream
     echo -en "please type remote repository url >>> "
     read url
     git remote add upstream "$url"
