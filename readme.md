@@ -30,13 +30,13 @@ $ sh compile.sh
 
 ## auto synchronization forked repository
 
-> refresh.sh
+> sync.sh
 
 + how to run?
 
 ```bash
 
-$ sh refresh.sh
+$ sh sync.sh
 
 ```
 ## auto all subdir which tracked by git backup(pull add commit push) script
@@ -49,6 +49,14 @@ $ sh refresh.sh
 $ python backup_to_git.py
 ```
 ## auto all submodule which forked upstream repository synchronize script
+
+> sync_with_upstream.py
+
++ how to run?
+
+```bash
+$ python sycn_with_upstream.py
+```
 ## check directory structure
 ```bash
 $ tree -dNC
