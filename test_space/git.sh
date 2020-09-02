@@ -22,7 +22,7 @@ echo "\n"
 expect << EOF
 spawn sudo git add .
 expect {
-    -re {\[sudo\] password for sungminyou:} {send "Coder1771?!?moneY\r"}
+    -re {\[sudo\] password for sungminyou:} {send "your_password\r"}
 }
 expect eof
 EOF
