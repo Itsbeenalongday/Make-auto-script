@@ -57,6 +57,17 @@ $ python backup_to_git.py
 ```bash
 $ python sycn_with_upstream.py
 ```
+
+## auto sync origin local branch
+
+> auto_sync.py
+
++ how to run?
+
+```bash
+$ python auto_sync.py
+```
+
 ## check directory structure
 ```bash
 $ tree -dNC
